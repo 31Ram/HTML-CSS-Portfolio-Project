@@ -1,22 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>My Blog</title>
-    <link
-      href="//fonts.googleapis.com/css?family=Roboto:400,500,300"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  </head>
-  <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Portafolio</title>
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body id="body">
+  <header>
+    <div class="row header">
+      <h1>Wiston Uribe Marin</h1>
+
+      <nav class="navbar">
+        <ul>
+          <li class="link btn btn-alt"><a href="#body">Inicio</a></li>
+          <li class="link btn btn-alt"><a href="#info">Informacion</a></li>
+          <li class="link btn btn-alt"><a href="#contac">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="column container">
+    <div class="row">
+      <div id="info" class="informacion column">
+        <h2 class="subtitle">Sobre mí</h2>
+        <p class="text">
+          Soy una persona con formación científica, en capacidad para desempeñarse en labores de
+          diseño y desarrollo de aplicaciones, desarrollador web junior con experiencia en HTML5, CSS3, Javascript,
+          Estoy en camino de convertirme en un desarrollador full-stack. Vivo en
+          Barcelona.
+          <br><br>
+          Estudiante de migracode barcelona.
+        </p>
+      </div>
+      <img class="foto" src="./resources/images/wiston.jpg" alt="foto de perfil">
+    </div>
+
+    <div class="column">
+      <h2 class="subtitle">Proyectos y areas de interes</h2>
+      <p class="text">Selección de proyectos personales y desarrollo web que he realizado durante mis estudios en Migracode Barcelona.</p>
+
+      <div class="row divCards">
+
+        <div class="column card">
+          <h4>Electrònica</h4>
+          <img src="./resources/images/pcbUno.jpg" alt="pcb electronica">
+          <p class="parrafo">Desarrollo e implementacion de estrategias de control en dispositivos electronicos programables.</p>
+        </div>
+
+        <div class="column card">
+          <h4>Programacion</h4>
+          <img src="./resources/images/desarrollo.jpg" alt="Diseño digital">
+          <p class="parrafo">Repositorio github con proyectos y aplicaciones, implementados en los diferentes 
+            lenguajes de programacion frontend y backend.</p>
+        </div>
+
+        <div class="column card">
+          <h4>Diseño</h4>
+          <img src="https://i.postimg.cc/sx9w21RT/publicidad.jpg" alt="Diseño digital">
+          <p class="parrafo">Desarrollo e implementacion estrategias de comunicación.</p>
+        </div>
+      </div>
+
+  </section>
+
+  <footer id="contac" class="column footer">
+    <h2>Wiston Uribe Marin.</h2>
+    <h3>Barcelona, España 2022</h3>
+    <p>wiston.uribe@correounivalle.edu.co</p>
+    <p>(+34) 697833842 </p>
+
+    <a class="link" href="https://github.com/31Ram">github.com/31Ram</a>
+    <a href="https://www.instagram.com/turing12/">instagram/turing12</a>
+  </footer>
+</body>
+
 </html>

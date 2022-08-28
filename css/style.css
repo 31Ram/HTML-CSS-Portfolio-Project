@@ -1,8 +1,324 @@
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- */
+/*
+    * ========================================
+    * Reset CSS
+    * http://meyerweb.com/eric/tools/css/reset/ 
+    *  v2.0 | 20110126
+    * License: none (public domain)
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ========================================
+   Display:
+   ======================================== */
+.row {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+/* ========================================
+   Estructura pagina: 
+   ======================================== */
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 30px 80px 30px 0px;
+}
+
+.container {
+  padding: 30px 30px;
+  background-color: white;
+}
+
+.footer {
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.divCards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 35px 0px;
+}
+
+.parrafo {
+  margin: 15px 0px;
+}
+
+/* ========================================
+   Contenido Pagina:
+   ========================================*/
+.informacion{
+  border: 0px solid black;
+}
+
+.foto {
+  width: 30%;
+  height: 100%;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 75%;
+  border: 0.5px solid black;
+  box-shadow: 15px 5px 10px #13152444;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #5d5ca1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.text {
+  text-align: justify;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.card {
+  background-color: #f2f5f7c0;
+  box-shadow: 15px 5px 10px #13152444;
+  padding: 20px;
+  margin: 10px;
+  width: 31%;
+  height: 420px;
+  border: 1px solid rgba(123, 123, 123, 0.196);
+  border-radius: 15px;
+}
+
+.map {
+  margin: 0px auto;
+}
+
+ a {
+   color: #fff;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #a9b2b9;
+ }
+
+/* ========================================
+   Buttons:
+   ========================================*/
+.btn {
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 7px 18px;
+}
+
+/* ========================================
+   Tipografia:
+   ========================================*/
+h1 {
+  font-size: 29px;
+  margin: 12px;
+  padding-left: 30px;
+  color: white;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.divImagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleCard {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.card h4 {
+  margin-bottom: 1em;
+}
+
+.card a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.imageCard {
+  width: auto;
+  border-radius: 10px;
+
+  border: 0.1px solid black;
+}
+
+.redes {
+  padding: 0px 10px;
+  cursor: pointer;
+  width: 25px;
+}
